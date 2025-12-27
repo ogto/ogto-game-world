@@ -14,5 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://ogto-game-world.vercel.app/games/dodge-jump/intro",
       lastModified: new Date(),
     },
+    {
+      url: "https://ogto-game-world.vercel.app/games/10s-challenge",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ogto-game-world.vercel.app/games/recoil-range",
+      lastModified: new Date(),
+    },
   ];
 }
