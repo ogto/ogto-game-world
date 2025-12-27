@@ -412,31 +412,6 @@ export default function GameClient() {
             <div className="text-lg font-extrabold tracking-tight">10초 챌린지</div>
           </div>
         </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={reset}
-            className="rounded-2xl border border-white/12 px-3 py-2 text-sm text-white/80 hover:bg-white/10 active:bg-white/15"
-          >
-            리셋
-          </button>
-
-          {phase !== "playing" ? (
-            <button
-              onClick={startCountdown}
-              className="rounded-2xl px-4 py-2 text-sm font-extrabold bg-white text-black hover:opacity-90 active:opacity-80"
-            >
-              {ctaLabel}
-            </button>
-          ) : (
-            <button
-              onClick={endGame}
-              className="rounded-2xl px-4 py-2 text-sm font-extrabold border border-white/18 hover:bg-white/10 active:bg-white/15"
-            >
-              그만하기
-            </button>
-          )}
-        </div>
       </div>
 
       {/* HUD */}
@@ -580,18 +555,12 @@ export default function GameClient() {
                     최고 <span className="font-extrabold text-white">{best}</span>
                   </div>
 
-                  <div className="mt-4 grid grid-cols-2 gap-2">
+                  <div className="mt-4 grid grid-cols gap">
                     <button
                       onClick={startCountdown}
                       className="rounded-2xl bg-white px-4 py-3 text-sm font-extrabold text-black hover:opacity-90 active:opacity-80"
                     >
                       다시 도전
-                    </button>
-                    <button
-                      onClick={reset}
-                      className="rounded-2xl border border-white/15 px-4 py-3 text-sm font-extrabold text-white/90 hover:bg-white/10 active:bg-white/15"
-                    >
-                      홈으로
                     </button>
                   </div>
 
