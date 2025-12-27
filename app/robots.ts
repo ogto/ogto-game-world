@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ogto.games/sitemap.xml",
+    sitemap: "https://ogto-game-world.vercel.app/sitemap.xml",
   };
 }

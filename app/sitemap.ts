@@ -3,15 +3,15 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://ogto.games/",
+      url: "https://ogto-game-world.vercel.app/",
       lastModified: new Date(),
     },
     {
-      url: "https://ogto.games/games/dodge-jump",
+      url: "https://ogto-game-world.vercel.app/games/dodge-jump",
       lastModified: new Date(),
     },
     {
-      url: "https://ogto.games/games/dodge-jump/intro",
+      url: "https://ogto-game-world.vercel.app/games/dodge-jump/intro",
       lastModified: new Date(),
     },
   ];
