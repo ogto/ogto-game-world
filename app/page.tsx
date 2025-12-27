@@ -6,7 +6,7 @@ import GameCard, { type Game } from "../components/GameCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "웹게임 허브",
+  title: "ogto 게임세상",
   description:
     "ogto 게임세상은 설치 없이 바로 즐길 수 있는 무료 웹게임 모음 사이트입니다.",
   alternates: {
@@ -38,6 +38,20 @@ const games: Game[] = [
     tags: ["집중력", "타이밍", "원버튼"],
     controls: [
       { label: "시작/정지", value: "클릭" },
+    ],
+  },
+  {
+    title: "리코일 레인지 (FPS)",
+    desc: "1인칭 시점에서 연사 반동을 제어하는 FPS 리코일 연습 게임",
+    href: "/games/recoil-range",
+    thumb: "/thumbs/recoil.png",
+    status: "LIVE",
+    tags: ["FPS", "반동연습", "마우스", "사격"],
+    controls: [
+      { label: "조준 모드", value: "클릭 (포인터락)" },
+      { label: "사격", value: "좌클릭(누르고 연사)" },
+      { label: "반동 제어", value: "마우스 ↓" },
+      { label: "조준 해제", value: "ESC" },
     ],
   },
 

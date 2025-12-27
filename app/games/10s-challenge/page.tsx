@@ -2,9 +2,65 @@ import type { Metadata } from "next";
 import GameClient from "./GameClient";
 
 export const metadata: Metadata = {
-  title: "10초 챌린지 | ogto game world",
-  description: "10초 동안 최대한 많이 맞춰라. 반응속도 미니게임!",
-  alternates: { canonical: "/games/10s-challenge" },
+  title: {
+    default: "10초 챌린지 | ogto 게임세상",
+    template: "%s | ogto 게임세상",
+  },
+  description:
+    "체감 10초를 정확히 맞추는 집중력 테스트 미니게임. 클릭 한 번으로 반응속도와 시간 감각을 훈련해보세요.",
+  keywords: [
+    "10초 챌린지",
+    "10초 게임",
+    "집중력 테스트",
+    "반응속도 테스트",
+    "타이밍 게임",
+    "시간 감각 테스트",
+    "클릭 게임",
+    "원버튼 게임",
+    "미니게임",
+    "웹 게임",
+    "브라우저 게임",
+    "ogto 게임세상",
+  ],
+  alternates: {
+    canonical: "/games/10s-challenge",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    url: "/games/10s-challenge",
+    title: "10초 챌린지 | ogto 게임세상",
+    description:
+      "체감 10초를 정확히 맞추는 집중력 & 타이밍 테스트. 모바일·PC 모두 가능한 원버튼 미니게임.",
+    siteName: "ogto 게임세상",
+    images: [
+      {
+        url: "/thumbs/10s-chal.png",
+        width: 1200,
+        height: 630,
+        alt: "10초 챌린지 - 집중력 테스트 미니게임",
+      },
+    ],
+    locale: "ko_KR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "10초 챌린지 | ogto 게임세상",
+    description:
+      "클릭 한 번으로 즐기는 10초 집중력 챌린지. 시간 감각을 테스트해보세요.",
+    images: ["/thumbs/10s-chal.png"],
+  },
+  category: "game",
 };
 
 export default function Page() {
