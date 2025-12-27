@@ -30,18 +30,31 @@ const games: Game[] = [
     ],
   },
   {
-    title: "곧 추가될 게임",
-    desc: "클릭 스피드, 리액션 테스트, 원버튼 게임 등",
-    href: "#",
-    thumb: "/thumbs/soon.png",
-    status: "SOON",
-    tags: ["준비중"],
+    title: "10초 챌린지",
+    desc: "체감 10초를 정확히 맞추는 집중력 & 감각 테스트",
+    href: "/games/10s-challenge",
+    thumb: "/thumbs/10s-chal.png",
+    status: "LIVE",
+    tags: ["집중력", "타이밍", "원버튼"],
     controls: [
-      { label: "상태", value: "제작중" },
-      { label: "출시", value: "Soon" },
+      { label: "시작/정지", value: "클릭" },
     ],
   },
+
+  // {
+  //   title: "곧 추가될 게임",
+  //   desc: "클릭 스피드, 리액션 테스트, 원버튼 게임 등",
+  //   href: "#",
+  //   thumb: "/thumbs/soon.png",
+  //   status: "SOON",
+  //   tags: ["준비중"],
+  //   controls: [
+  //     { label: "상태", value: "제작중" },
+  //     { label: "출시", value: "Soon" },
+  //   ],
+  // },
 ];
+
 
 export default function HomePage() {
   return (
