@@ -595,7 +595,7 @@ export default function GameClient() {
                     </button>
                   </div>
 
-                  <div className="mt-4 text-[11px] text-white/45">(여기에 전면 광고 넣으면 UX 깨지지 않음)</div>
+                  <div className="mt-4 text-[11px] text-white/45"></div>
                 </div>
               ) : (
                 <div className="mt-3">
