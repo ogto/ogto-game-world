@@ -54,6 +54,21 @@ const games: Game[] = [
       { label: "조준 해제", value: "ESC" },
     ],
   },
+  {
+    title: "DOOM (개발중)",
+    desc: "레이캐스팅 기반 1인칭 FPS 프로토타입",
+    href: "/games/doom",
+    thumb: "/thumbs/doom.png",
+    tags: ["FPS", "레이캐스트", "포인터락", "개발중"],
+    controls: [
+      { label: "이동", value: "W A S D" },
+      { label: "달리기", value: "Shift" },
+      { label: "조준 모드", value: "클릭 (포인터락)" },
+      { label: "사격", value: "좌클릭" },
+      { label: "조준 해제", value: "ESC" },
+    ],
+  },
+
 
   // {
   //   title: "곧 추가될 게임",
@@ -173,9 +188,12 @@ export default function HomePage() {
           </div>
 
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {games.map((g) => (
-              <GameCard key={g.title} game={g} />
-            ))}
+            {games
+              .slice()
+              .reverse()
+              .map((g) => (
+                <GameCard key={g.title} game={g} />
+              ))}
           </div>
         </section>
 
